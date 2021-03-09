@@ -8,6 +8,7 @@ class TrustFall {
 
   //Checks whether device JailBroken on iOS/Android?
   static Future<bool> get isJailBroken async {
+    print("test");
     final bool isJailBroken = await _channel.invokeMethod('isJailBroken');
     return isJailBroken;
   }
